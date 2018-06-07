@@ -1,0 +1,7 @@
+@startuml
+Client -> EOS: buy_omp_token
+note right: payable 이 있는지 체크
+EOS --> EOS: OMP_TOKENS[address] ++
+EOS --> EOS: print OMP_TOKENS[address]
+EOS --> Client: parse int
+@enduml

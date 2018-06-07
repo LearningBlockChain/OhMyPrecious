@@ -1,0 +1,5 @@
+@startuml
+Client -> EOS: get_slot_count
+EOS --> EOS: print SLOT_COUNT[address]
+EOS --> Client: parse int
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+Client -> EOS: buy_slot
+EOS --> EOS: OMP_TOKENS[address] > 0
+EOS --> EOS: SLOT_COUNT[address] ++
+EOS --> EOS: print SLOT_COUNT[address]
+EOS --> Client: parse int
+@enduml
